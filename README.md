@@ -1,2 +1,2 @@
 # Classwork
-https://github.com/Lachin707/Classwork.git
+git remote add origin https://github.com/Lachin707/Classwork.git
