@@ -8,13 +8,8 @@
     background-color: steelblue;
     width: 100vw; 
     height: 800px;
-    padding: 300px; 
+    /* padding: 300px;  */
  } 
-/* .box{
-    width: 200px;
-    height: 600px;
-    margin: 200px auto;
-} */
 h3{
     color: gray;
     margin-left: 40px;
@@ -36,15 +31,12 @@ button{
     color: white;
     margin-left: 40px;
 }
-
-body{
-    padding: 200px;
-}
 .cardBox{
-    width: 200px;
+    width: 50%;
     background-color: white;
     border: 1px solid black;
     border-radius: 15px;
+    margin: 200px auto;
 }
 .card{
     width: 50px;
