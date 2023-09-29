@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+body{
+    width: 100vw;
+    height: 800px;
+    background-color: darkseagreen;
+}
+
+div{
+    width: 20%;
+    height: 70%;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 40px 40px;
+    float:left;
+
+    
+}
+
+div img{
+    width: 100%;
+    height: 40%;
+}
+
+div h1{
+    text-align: center;
+}
+
+div p{
+    font-size: 20px;
+    padding: 10px;
+}
+
+button{
+    clear: both;
+    margin-left: 10px;
+    border: none;
+}
