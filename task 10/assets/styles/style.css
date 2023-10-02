@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: steelblue;
+    font-family: 'Comfortaa', cursive;
+}
+
+header{
+    width: 1440px;
+    height: 70px;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    position: relative;
+    padding-top: 12px;
+}
+
+.left_side{
+    width: fit-content;
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+}
+
+.left_side div:first-child{
+    display: inline;
+}
+
+.left_side div:first-child img{
+    display: inline;
+    margin-bottom: -10px;
+}
+
+.left_side div:first-child p{
+    display: inline;
+}
+
+.left_side ul{
+    display: inline-block;
+}
+
+.left_side ul li:first-child select{
+    color: #448c74;
+}
+
+.left_side ul li{
+    display: inline;
+    margin: 0 10px;
+}
+
+.left_side ul li a{
+    color: white;
+}
+
+.left_side ul li select{
+    background: none;
+    border: none;
+    color:  white;
+}
+
+.right_side{
+    width: fit-content;
+    position: absolute;
+    right: 20px;
+    display: flex;
+}
+
+.right_side img{
+    width: 80px;
+    height: 30px;
+}
+
+.right_side button{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #448c74;
+    color: white;
+}
+
+main{
+    width: 1440px;
+    height: 800px;
+    margin: 0 auto;
+    background-color: black;
+    border: 1px dotted rgb(0, 0, 0);
+    position: relative;
+}
+
+/* hero text */
+main div:nth-of-type(1){
+    color: white;
+    text-align: center;
+    width: fit-content;
+    margin: 50px auto;
+}
+
+/* mouse img */
+main div:nth-of-type(2){
+    width: fit-content;
+    margin: 40px auto;
+    color: white;
+}
+
+main div:nth-of-type(2) div{
+    border: 1px solid gray;
+    border-radius: 25px;
+    width: 50px;
+    height: 100px;
+    margin: 10px auto;
+    color: white;
+}
+
+main div:nth-of-type(2) div div{
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    background-color: gray;
+    margin: 0 auto;
+    margin-top: 70px;
+    color: white;
+}
+
+/* left circle */
+main div:nth-of-type(3){
+    border-radius: 50%;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 200px;
+    top: 200px;
+    background-color: crimson;
+    overflow: hidden;
+}
+
+main div:nth-of-type(3) img{
+    width: 75%;
+    height: 75%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/* middle circle */
+main div:nth-of-type(4){
+    border-radius: 50%;
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    left: calc(50% - 110px);
+    top: 350px;
+    background-color: darkgreen;
+    overflow: hidden;
+}
+
+main div:nth-of-type(4) img{
+    width: 75%;
+    height: 75%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+/* right circle */
+main div:nth-of-type(5){
+    border-radius: 50%;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    right: 200px;
+    top: 200px;
+    background-color: darkgoldenrod;
+    overflow: hidden;
+}
+
+main div:nth-of-type(5) img{
+    width: 75%;
+    height: 75%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+footer{
+    width: 1440px;
+    height: fit-content;
+    margin: 0 auto;
+    background-color: white;
+}
