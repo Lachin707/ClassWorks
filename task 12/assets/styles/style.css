@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap");
+
+body {
+	background-color: steelblue;
+	font-family: "Comfortaa", cursive;
+}
+
+main #hero {
+	font-size: 3em;
+	text-align: center;
+}
+
+main #hero .container_grid {
+	display: grid;
+}
+
+main #hero .item-1 {
+	overflow: hidden;
+	background-color: aqua;
+}
+
+main #hero .item-1 img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+main #hero .item-2 {
+	background-color: #ffc600;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+}
+
+main #hero .item-3 {
+	background-color: #ffc600;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+}
+
+
+@media (min-width: 992px) {
+	main #hero .container_grid {
+		grid-template-columns: 2fr 1fr;
+		gap: 20px;
+	}
+	main #hero .item-1-pc {
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 3;
+	}
+
+	main #hero.item-2-pc {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+
+	main #hero .item-3-pc {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		grid-row-start: 2;
+		grid-row-end: 3;
+	}
+	main #hero .container_grid {
+		background-color: blue;
+	}
+}
+
+
+@media (max-width: 992px) {
+	main #hero .container_grid {
+        gap: 20px;
+	}
+
+    main #hero .item-1-tb {
+        grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 2;
+    } 
+    
+
+    main #hero .item-2-tb {
+        grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 2;
+		grid-row-end: 3;
+    }
+
+    main #hero .item-3-tb {
+        grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 2;
+		grid-row-end: 3;
+    } 
+
+	main #hero .container_grid {
+		background-color: aqua;
+	}
+}
+
+@media (max-width: 576px) {
+	main #hero .container_grid {
+		gap: 20px;
+	}
+
+	main #hero .item-1-mb {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		grid-row-end: 3;
+	}
+
+	main #hero .item-2-mb {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 3;
+		grid-row-end: 4;
+	}
+
+	main #hero .item-3-mb {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 4;
+		grid-row-end: 5;
+	}
+	main #hero .container_grid {
+		background-color: green;
+	}
+}
+
+
+main #features{
+    margin-top: 50px;
+}
+
+main #features .card{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid black;
+}
+
+main #features .card i{
+    align-self: center;
+    font-size: 3em;
+}
+
+main #features .card h3{
+    margin: 20px 0;
+    align-self: center;
+}
+main #features .card p{
+    color: gray;
+    align-self: center;
+}
