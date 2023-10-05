@@ -18,29 +18,26 @@ body {
 }
 
 #card .image_wrapper {
-    position: relative;
-    /* overflow: hidden; */
-    top: 45%;
-    left: 15%;
+	position: relative;
+	overflow: hidden;
+	top: 45%;
+	left: 15%;
 }
 
-
-[id="radio1"]:checked.image {
-    background: url("./img/1.png");
+.image {
+	background: url("./img/1.png");
 	background-position: center;
 	background-size: cover;
 	width: 250px;
 	height: 250px;
-    transform: translateX(270px) rotate(-15deg);
-    transition: 1s;
+	transform: translateX(270px) rotate(-15deg);
+	transition: 1s;
 }
 
-#card .image_wrapper .image {
-    
-}
+/* *[value="blue"]:checked  */
 
 #card:hover .image {
-    transform: translateX(70px);
+	transform: translateX(70px);
 }
 
 #card .card_top {
@@ -49,8 +46,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	height: 300px;
-    border-radius: 20px 20px 0 0;
-    overflow: hidden;
+	border-radius: 20px 20px 0 0;
+	overflow: hidden;
 }
 
 #card .card_top .logo {
@@ -80,21 +77,21 @@ body {
 	display: flex;
 	flex-direction: column;
 	height: 300px;
-    border-radius: 0 0 20px 20px;
+	border-radius: 0 0 20px 20px;
 }
 
 #card .card_bottom .info {
 }
 
-#card .card_bottom .info .name{
-    display: flex;
-    flex-direction: row;
+#card .card_bottom .info .name {
+	display: flex;
+	flex-direction: row;
 }
 
 #card .card_bottom .info .name h1 {
 	text-transform: uppercase;
 	font-size: 1.5em;
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 #card .card_bottom .info .name .mark_box {
@@ -104,8 +101,8 @@ body {
 	border-radius: 5px;
 	text-align: center;
 	color: white;
-    margin-top: 7px;
-    padding-bottom: 3px;
+	margin-top: 7px;
+	padding-bottom: 3px;
 }
 
 #card .card_bottom .info p {
@@ -114,17 +111,17 @@ body {
 }
 
 #card .card_bottom .info .stars {
-    height: 20px;
+	height: 20px;
 }
 
-#card .card_bottom .info .stars i{
-    color: black;
+#card .card_bottom .info .stars i {
+	color: black;
 	font-size: 12px;
 }
 
 #card .card_bottom .size {
-    height: 50px;
-    margin-top: 20px;
+	height: 50px;
+	margin-top: 20px;
 }
 
 #card .card_bottom .size h1 {
@@ -155,28 +152,28 @@ body {
 	color: white;
 }
 
-#card .card_bottom .bottom_boxes{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
+#card .card_bottom .bottom_boxes {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
 }
 
 #card .card_bottom .bottom_boxes .color_box {
-    width: 100px;
-    height: 50px;
+	width: 100px;
+	height: 50px;
 }
 
-#card .card_bottom .bottom_boxes.color_box p{
-    text-transform: uppercase;
+#card .card_bottom .bottom_boxes.color_box p {
+	text-transform: uppercase;
 }
 
 #card .card_bottom .bottom_boxes .price_box {
-    border-radius: 5px;
-    width: 150px;
-    height: 50px;
-    text-align: center;
-    background-color: #213e62;
-    transform: translateX(40px);
-    padding-top: 15px;
-    color: white;
+	border-radius: 5px;
+	width: 150px;
+	height: 50px;
+	text-align: center;
+	background-color: #213e62;
+	transform: translateX(40px);
+	padding-top: 15px;
+	color: white;
 }
