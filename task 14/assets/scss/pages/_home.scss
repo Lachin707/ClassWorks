@@ -1,0 +1,203 @@
+#top-header {
+    height: 150px;
+    width: 100%;
+
+    .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 120px;
+        height: 90px;
+        background-image: url(https://preview.colorlib.com/theme/waterboat/images/logo.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .desktop-mode {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        .info-card {
+            display: flex;
+            flex-direction: row;
+            margin: 0 15px;
+
+            &__icon {
+                margin-top: 5px;
+                margin-right: 10px;
+                background-color: $main-color;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                i {
+                    color: white;
+                    font-size: 25px;
+                    display: block;
+                }
+            }
+
+            &__text-box {
+                h2 {
+                    font-family: "Oswald";
+                    font-size: 20px;
+                    color: black;
+                    margin-bottom: 0;
+                }
+
+                p {
+                    font-family: "Mulish";
+                    font-size: 16px;
+                    color: gray;
+                }
+            }
+        }
+    }
+
+    .mobile-mode {
+        display: none;
+
+        a {
+            color: black;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .desktop-mode {
+            display: none;
+        }
+
+        .mobile-mode {
+            display: block;
+        }
+    }
+
+}
+
+header {
+    background-color: $main-color;
+    top: 0px;
+    position: sticky;
+    z-index: 5;
+
+    #bottom-header {
+        background-color: $main-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+
+        a {
+            color: white;
+            text-transform: uppercase;
+            margin: 0 15px;
+            font-family: "Oswald";
+            font-weight: bold;
+        }
+    }
+}
+
+#hero {
+    height: 80vh;
+    font-family: poppins;
+
+    .container {
+        height: 100%
+    }
+
+    .bg-image {
+        z-index: -5;
+        width: 100%;
+        height: 100%;
+        background-image: url(https://preview.colorlib.com/theme/waterboat/images/hero_2.jpg.webp);
+        background-position: center;
+        background-size: cover;
+
+        .fill {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+
+            .middle-items {
+                color: white;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                h1 {
+                    font-size: 48px;
+                    font-family: "Oswald";
+                }
+
+                p {
+                    font-family: "Mulish";
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                }
+
+                &__read-more-btn {
+                    width: 160px;
+                    height: 60px;
+                    border-radius: 5px;
+                    background-color: $main-color;
+                    
+
+                    a{
+                        width: 100%;
+                        height: 100%;
+                        color: white;
+                        display: block;
+                        text-align: center;
+                        padding-top: 16px;
+                        text-transform: uppercase;
+                        font-family: "Oswald";
+                        font-weight: bold;
+                    }
+
+                    transition: 0.5s;
+
+                    &:hover {
+                        background-color: $main-color-hover;
+                    }
+                }
+
+                .get-started-btn{
+                    width: 120px;
+                    height: 40px;
+                    background-color: $main-color;
+                    border-radius: 20px;
+                    transition: 0.5s;
+                
+                    a{
+                        width: 100%;
+                        height: 100%;
+                        color: white;
+                        display: block;
+                        text-align: center;
+                        padding-top: 9px;
+                    }
+                
+                    &:hover{
+                        background-color: $main-color-hover;
+                    }
+                }
+
+                transition: 1s;
+            }
+
+        }
+    }
+
+
+}
