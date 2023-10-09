@@ -325,6 +325,7 @@ a {
 #top-header {
   height: 150px;
   width: 100%;
+  background-color: white;
 }
 #top-header .container {
   height: 100%;
@@ -411,6 +412,11 @@ header #bottom-header a {
   font-family: "Oswald";
   font-weight: bold;
 }
+@media (max-width: 992px) {
+  header #bottom-header {
+    display: none;
+  }
+}
 
 #hero {
   height: 80vh;
@@ -439,7 +445,6 @@ header #bottom-header a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: 1s;
 }
 #hero .bg-image .fill .middle-items h1 {
   font-size: 48px;
@@ -466,26 +471,298 @@ header #bottom-header a {
   padding-top: 16px;
   text-transform: uppercase;
   font-family: "Oswald";
-  font-weight: bold;
+  font-weight: normal;
 }
 #hero .bg-image .fill .middle-items__read-more-btn:hover {
   background-color: #1060b1;
 }
-#hero .bg-image .fill .middle-items .get-started-btn {
-  width: 120px;
-  height: 40px;
+
+#about-us {
+  padding-top: 100px;
+  background-color: white;
+}
+#about-us .about-us__top .about-us__top__image {
+  width: 100%;
+  height: 400px;
+  background-image: url(https://preview.colorlib.com/theme/waterboat/images/hero_2.jpg.webp);
+  background-position: center;
+  background-size: cover;
+}
+#about-us .about-us__top .about-us__top__info-box {
+  padding: 60px;
+}
+#about-us .about-us__top .about-us__top__info-box h3 {
+  font-family: "Dancing Script";
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #1089ff;
+}
+#about-us .about-us__top .about-us__top__info-box h1 {
+  font-family: "Oswald";
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+#about-us .about-us__top .about-us__top__info-box p {
+  font-family: "Mulish";
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: gray;
+}
+#about-us .about-us__top .about-us__top__info-box .about-us__top__info-box__learn-more-btn {
+  width: 160px;
+  height: 60px;
+  border-radius: 5px;
   background-color: #1089ff;
-  border-radius: 20px;
   transition: 0.5s;
 }
-#hero .bg-image .fill .middle-items .get-started-btn a {
+#about-us .about-us__top .about-us__top__info-box .about-us__top__info-box__learn-more-btn a {
   width: 100%;
   height: 100%;
   color: white;
   display: block;
   text-align: center;
-  padding-top: 9px;
+  padding-top: 16px;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-weight: normal;
 }
-#hero .bg-image .fill .middle-items .get-started-btn:hover {
+#about-us .about-us__top .about-us__top__info-box .about-us__top__info-box__learn-more-btn:hover {
   background-color: #1060b1;
+}
+#about-us .about-us__bottom {
+  padding: 60px 0;
+}
+#about-us .about-us__bottom .about-us__bottom__info-card .about-us__bottom__info-card__icon {
+  width: 100px;
+  height: 100px;
+}
+#about-us .about-us__bottom .about-us__bottom__info-card .about-us__bottom__info-card__icon i {
+  font-size: 90px;
+  color: #1089ff;
+}
+#about-us .about-us__bottom .about-us__bottom__info-card .about-us__bottom__info-card__text-box h2 {
+  font-family: "Oswald";
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+#about-us .about-us__bottom .about-us__bottom__info-card .about-us__bottom__info-card__text-box p {
+  font-family: "Mulish";
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: gray;
+}
+
+#stats {
+  background-color: rgba(16, 137, 255, 0.8);
+  padding: 50px 0;
+}
+#stats .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#stats .stats__card {
+  text-align: center;
+  margin: 0 20px;
+}
+#stats .stats__card h1 {
+  font-family: "Oswald";
+  font-size: 50px;
+  color: white;
+}
+#stats .stats__card p {
+  font-family: "Mulish";
+  font-size: 18px;
+  color: white;
+}
+
+#stats-bg {
+  position: fixed;
+  z-index: -5;
+  left: 0px;
+  top: 10%;
+  width: 100vw;
+  height: 1000px;
+  background-image: url(https://preview.colorlib.com/theme/waterboat/images/hero_1.jpg.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+#destinations {
+  background-color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+#destinations .section-title {
+  margin-bottom: 50px;
+}
+#destinations .section-title h3 {
+  font-family: "Dancing script";
+  font-size: 18px;
+  color: #1089ff;
+  font-weight: normal;
+}
+#destinations .section-title h1 {
+  font-family: "Oswald";
+  font-size: 28px;
+  color: black;
+  font-weight: normal;
+}
+#destinations .section-title h1::after {
+  content: " ";
+  background-color: #1089ff;
+  width: 60px;
+  height: 2px;
+  display: inline-block;
+  margin-bottom: -20px;
+  margin-left: -120px;
+}
+#destinations .destinations-card {
+  margin: 10px 10px;
+}
+#destinations .destinations-card__image {
+  width: 100%;
+  height: 200px;
+}
+#destinations .destinations-card__image img {
+  width: 100%;
+  height: 100%;
+}
+#destinations .destinations-card__bottom-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+#destinations .destinations-card__bottom-box__left a {
+  color: black;
+  font-family: "Oswald";
+  font-size: 18px;
+  margin: 10px 0;
+}
+#destinations .destinations-card__bottom-box__left p {
+  color: gray;
+  font-family: "Oswald";
+  font-size: 18px;
+  margin: 5px 0;
+}
+#destinations .destinations-card__bottom-box__right__price {
+  border-radius: 4px;
+  background-color: #1089ff;
+  color: white;
+  padding: 10px;
+}
+
+#our-team {
+  background-color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+#our-team .section-title {
+  margin-bottom: 50px;
+}
+#our-team .section-title h3 {
+  font-family: "Dancing script";
+  font-size: 18px;
+  color: #1089ff;
+  font-weight: normal;
+}
+#our-team .section-title h1 {
+  font-family: "Oswald";
+  font-size: 28px;
+  color: black;
+  font-weight: normal;
+}
+#our-team .section-title h1::after {
+  content: " ";
+  background-color: #1089ff;
+  width: 60px;
+  height: 2px;
+  display: inline-block;
+  margin-bottom: -20px;
+  margin-left: -80px;
+}
+#our-team .teammate-card {
+  text-align: center;
+  margin: 10px 10px;
+}
+#our-team .teammate-card__image {
+  height: 350px;
+}
+#our-team .teammate-card__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#our-team .teammate-card__info-box h1 {
+  font-family: "Oswald";
+  font-size: 28px;
+  margin: 5px 0;
+  color: black;
+}
+#our-team .teammate-card__info-box p {
+  font-family: "Mulish";
+  font-size: 16px;
+  color: #1089ff;
+}
+
+#contact {
+  background-color: rgba(16, 137, 255, 0.8);
+  padding: 50px 0;
+}
+#contact .middle-items {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#contact .middle-items h1 {
+  font-size: 48px;
+  font-family: "Oswald";
+}
+#contact .middle-items p {
+  font-family: "Mulish";
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+#contact .middle-items__read-more-btn {
+  width: 160px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: #ffa139;
+  transition: 0.5s;
+}
+#contact .middle-items__read-more-btn a {
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: block;
+  text-align: center;
+  padding-top: 16px;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-weight: normal;
+}
+#contact .middle-items__read-more-btn:hover {
+  background-color: #bb6d15;
+}
+
+#contact-bg {
+  position: fixed;
+  z-index: -5;
+  left: 0px;
+  top: 40%;
+  width: 100vw;
+  height: 1000px;
+  background-image: url(https://preview.colorlib.com/theme/waterboat/images/hero_2.jpg.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+footer {
+  background-color: white;
+  padding: 50px 0;
 }/*# sourceMappingURL=main.css.map */
