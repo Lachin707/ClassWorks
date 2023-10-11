@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+#xo-game {
+  background-color: #192a32;
+}
+#xo-game .row div {
+  border-radius: 50px;
+  scale: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#xo-game .row div[class^=head] {
+  aspect-ratio: 3;
+  border: 1px solid red;
+}
+#xo-game .row .head-left .fa-xmark {
+  color: #31c4be;
+}
+#xo-game .row .head-left .fa-o {
+  color: #f2b237;
+}
+#xo-game .row .head-left i {
+  font-size: 500%;
+}
+#xo-game .row .head-mid {
+  background-color: #1f3540;
+  box-shadow: 5px 5px 20px black;
+}
+#xo-game .row .head-mid .fa-xmark {
+  color: #31c4be;
+}
+#xo-game .row .head-mid .fa-o {
+  color: #f2b237;
+}
+#xo-game .row .head-mid i {
+  font-size: 500%;
+}
+#xo-game .row .head-mid p {
+  font-size: 500%;
+}
+#xo-game .row .head-right .reset-btn {
+  display: flex;
+  justify-content: end;
+  background-color: #a8bec9;
+}
+#xo-game .row .head-right .reset-btn i {
+  font-size: 500%;
+  color: #1f3540;
+}
+#xo-game .row div[class^=game] {
+  aspect-ratio: 1;
+  background-color: #1f3540;
+  box-shadow: 5px 5px 20px black;
+}
+#xo-game .row div[class^=game] i {
+  font-size: 2000%;
+  position: absolute;
+}
+#xo-game .row div[class^=game] .fa-xmark {
+  color: #31c4be;
+}
+#xo-game .row div[class^=game] .fa-o {
+  color: #f2b237;
+}
+#xo-game .row div[class^=bottom] {
+  aspect-ratio: 3;
+  color: #08262c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 400%;
+}
+#xo-game .row div[class^=bottom] P {
+  margin: -4% 0;
+}
+#xo-game .row .bottom-left {
+  background-color: #31c4be;
+}
+#xo-game .row .bottom-mid {
+  background-color: #a8bec9;
+}
+#xo-game .row .bottom-right {
+  background-color: #f2b237;
+}/*# sourceMappingURL=main.css.map */
