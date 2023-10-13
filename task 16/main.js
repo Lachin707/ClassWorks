@@ -205,7 +205,7 @@ else{
 
 */
 
-
+/*
 do{
     again = false;
 
@@ -268,3 +268,139 @@ do{
     }
         
 }while(again);
+*/
+console.log("task1");
+
+for (let index = 10; index < 99; index++)
+	if (String(index)[1] == "7") console.log(index);
+
+console.log("task2");
+
+for (let index = 10; index < 99; index++)
+	if (String(index)[0] == String(index)[1]) console.log(index);
+
+/*
+console.log("task3");
+
+let a = prompt("task3. Enter a nubmer:"); 
+
+let str1 = "";
+for (let index = 0; index < a.length; index++) str1 += ((a[index]) + " ");
+
+console.log(str1);
+
+console.log("task4");
+
+let numbers = prompt("task4. Enter a nubmer:");
+let max = 0;
+let index;
+
+for (index = 0; index < numbers.length; index++)
+	if (numbers[index] > max) max = numbers[index];
+
+console.log(String(max));
+*/
+
+/*
+console.log("task5");
+
+let a = prompt("task5. Enter a nubmer:"); 
+let sum = 0;
+let has = 1;
+let mid = 0;
+
+for (let index = 0; index < a.length; index++) {
+    sum += Number(a[index]);
+    has *= Number(a[index]);
+}
+
+mid = sum;
+mid /= a.length;
+
+console.log(String(sum));
+console.log(String(has));
+console.log(String(mid));
+*/
+
+/*
+console.log("task 6 & 7");
+
+let number = Number(prompt("task 6 & 7. Enter a nubmer:"));
+let str1 = "";
+let count = 0;
+
+for (let index = 0; index < number; index++) 
+    if (number % index == 0) {
+        str1 += (String(index) + " ");
+        count++;
+    };
+    
+console.log(str1);
+console.log(count);
+*/
+
+/*
+console.log("task8");
+
+let arr=[3,8,2,5,4,10,7,6];
+let str1 ="";
+
+for (let index = 0; index < arr.length; index++) {
+    if (arr[index] % 2 == 1) {
+        str1 += (String(index) + " ");
+    }
+}
+
+console.log(str1);
+*/
+
+/*
+console.log("task9");
+
+let arr=[3,8,2,5,4,10,7,6];
+let str1 ="";
+
+for (let index = 0; index < arr.length; index++) {
+    if (index % 2 == 1) {
+        str1 += (String(arr[index]) + " ");
+    }
+}
+
+console.log(str1);
+*/
+
+/*
+console.log("task 10");
+
+let arr = [3, 8, 2, 5, 4, 10, 7, 6];
+let max = 0;
+
+for (let index = 0; index < arr.length; index++)
+	if (arr[index] > max) max = arr[index];
+
+console.log(max);
+*/
+
+/*
+console.log("task 11");
+let arr = [3, 8, 2, 5, 4, 10, 7, 6];
+let max = 0;
+
+for (let index = 0; index < arr.length; index++)
+	if (arr[index] > max && arr[index] % 2 == 0) max = arr[index];
+
+console.log(max);
+*/
+
+console.log("task 12");
+let arr = [3, 8, 2, 5, 4, 10, 7, 6];
+let min = 999;
+let i = 0;
+
+for (let index = 0; index < arr.length; index++)
+	if (arr[index] < min) {
+        min = arr[index];
+        i = index
+    }
+
+console.log(i);
