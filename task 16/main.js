@@ -269,6 +269,7 @@ do{
         
 }while(again);
 */
+/*
 console.log("task1");
 
 for (let index = 10; index < 99; index++)
@@ -278,7 +279,7 @@ console.log("task2");
 
 for (let index = 10; index < 99; index++)
 	if (String(index)[0] == String(index)[1]) console.log(index);
-
+*/
 /*
 console.log("task3");
 
@@ -391,7 +392,7 @@ for (let index = 0; index < arr.length; index++)
 
 console.log(max);
 */
-
+/*
 console.log("task 12");
 let arr = [3, 8, 2, 5, 4, 10, 7, 6];
 let min = 999;
@@ -404,3 +405,24 @@ for (let index = 0; index < arr.length; index++)
     }
 
 console.log(i);
+*/
+
+
+let numbers = [
+	1, 4, 2, 6, 8, 2, 1, 7, 7, 5, 11, 11, 14, 13, 15, 15, 15, 15, 15, 99999,
+	99999,
+];
+let array = [];
+
+for (let index = 0; index < numbers.length; index++) array[numbers[index]] = 0;
+for (let index = 0; index < numbers.length; index++) array[numbers[index]]++;
+
+let str1 = "";
+let count = 0;
+for (let index = 0; index < array.length; index++) {
+	if (!isNaN(array[index]) && array[index] > 1) {
+		str1 += String(index) + ": " + String(array[index]) + "  ";
+		count++;
+	}
+}
+alert(str1 + `count: ${count}`);
