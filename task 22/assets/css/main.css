@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+#xo-game {
+  background-color: gray;
+}
+#xo-game .container {
+  width: 500px;
+}
+#xo-game .row div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#xo-game .row div[class^=circle] {
+  border-radius: 50%;
+  scale: 0.9;
+  aspect-ratio: 1;
+  background-color: #1f3540;
+  box-shadow: 5px 5px 20px black;
+  font-size: 300%;
+  color: white;
+}
+#xo-game .row .rounded-btn {
+  border-radius: 200px;
+  scale: 0.9;
+  background-color: #1f3540;
+  box-shadow: 5px 5px 20px black;
+  font-size: 300%;
+  color: white;
+}
+#xo-game .row .screen {
+  border-radius: 200px;
+  scale: 1;
+  background-color: #1f3540;
+  box-shadow: 5px 5px 20px black;
+  font-size: 300%;
+  color: white;
+  margin: 20px;
+}/*# sourceMappingURL=main.css.map */

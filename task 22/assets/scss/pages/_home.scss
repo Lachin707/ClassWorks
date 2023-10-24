@@ -1,0 +1,54 @@
+#xo-game {
+    background-color: gray;
+
+    .container {
+        width: 500px;
+    }
+
+    .row {
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div[class ^="circle"] {
+            border-radius: 50%;
+            scale: 0.9;
+            aspect-ratio: 1;
+            background-color: #1f3540;
+            box-shadow: 5px 5px 20px black;
+            font-size: 300%;
+            color: white;
+        }
+
+        .rounded-btn {
+            border-radius: 200px;
+            scale: 0.9;
+
+            background-color: #1f3540;
+            box-shadow: 5px 5px 20px black;
+            font-size: 300%;
+            color: white;
+        }
+
+        .screen {
+            border-radius: 200px;
+            scale: 1;
+            background-color: #1f3540;
+            box-shadow: 5px 5px 20px black;
+            font-size: 300%;
+            color: white;
+            margin: 20px;
+        }
+
+    }
+
+
+
+
+
+
+
+}
