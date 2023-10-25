@@ -1,0 +1,75 @@
+section {
+
+   
+
+    .oss-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+        &__os {
+            width: 250px;
+            height: 200px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            
+            i {
+                font-size: 6rem;
+                color: white;
+            }
+        }
+
+
+    }
+
+    .bottom-box {
+        height: 400px;
+        width: 100%;
+        border-radius: 20px;
+        display: flex;
+
+        &__text-box {
+            height: 100%;
+            width: 100%;
+            padding: 20px;
+            color: white;
+            
+        }
+
+        &__icon-box {
+            height: 100%;
+            aspect-ratio: 1;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i{
+                font-size: 10rem;
+                color: white;
+            }
+        }
+
+    }
+
+    .windows {
+        background-color: #009ae4;
+    }
+    
+    .ubuntu {
+        background-color: #e0500e;
+    }
+    
+    .redhat {
+        background-color: #fc1700;
+    }
+    
+    .mac {
+        background-color: #807f80;
+    }
+
+}
+

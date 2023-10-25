@@ -1,0 +1,54 @@
+section .oss-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section .oss-box__os {
+  width: 250px;
+  height: 200px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+section .oss-box__os i {
+  font-size: 6rem;
+  color: white;
+}
+section .bottom-box {
+  height: 400px;
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+}
+section .bottom-box__text-box {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  color: white;
+}
+section .bottom-box__icon-box {
+  height: 100%;
+  aspect-ratio: 1;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section .bottom-box__icon-box i {
+  font-size: 10rem;
+  color: white;
+}
+section .windows {
+  background-color: #009ae4;
+}
+section .ubuntu {
+  background-color: #e0500e;
+}
+section .redhat {
+  background-color: #fc1700;
+}
+section .mac {
+  background-color: #807f80;
+}/*# sourceMappingURL=main.css.map */
