@@ -1,0 +1,145 @@
+#xo-game{
+    background-color: #192a32;
+    
+    .container{
+        width: 600px;
+    }
+       
+    .row{
+
+        div{
+            border-radius: 50px;
+            scale: 0.9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        div[class ^="head"]{
+            aspect-ratio: 3;
+           
+        }
+
+        .head-left{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .fa-xmark{
+                color: #31c4be;
+            }
+             
+            .fa-o{
+                color: #f2b237;
+            }
+            i{
+                font-size: 500%;
+            }
+                      
+            
+        }
+
+        .head-mid{
+            background-color: #1f3540;
+            box-shadow: 5px 5px 20px black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .fa-xmark{
+                color: #31c4be;
+            }
+             
+            .fa-o{
+                color: #f2b237;
+            }
+            i{
+                font-size: 2rem;
+
+            }
+            p{
+                font-size: 2rem;
+                margin: 0;
+                font-weight: bold;
+                color: #a8bec9;
+            }
+        }
+
+        
+            .reset-btn{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                background-color: #a8bec9;
+                width: 100%;
+                border-radius: 50px;
+                i{
+                    font-size: 4rem;
+                    color: #1f3540;
+                }
+            }
+        
+    
+        div[class ^="game"]{
+            aspect-ratio: 1;
+            background-color: #1f3540;
+            box-shadow: 5px 5px 20px black;
+
+            i{
+                font-size: 10rem;
+                position: absolute;
+                transition: 1s;
+            }
+
+            .fa-xmark{
+                color: #31c4be;
+            }
+             
+            .fa-o{
+                color: #f2b237;
+            }
+        }
+    
+        div[class ^="bottom"]{
+            aspect-ratio: 3;
+            color: #08262c;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 400%;
+            text-align: center;
+            P{
+                margin: -4% 0;
+            }
+        }
+
+        .bottom-left{
+            background-color: #31c4be;
+            p{
+                font-size: 2rem;
+            }
+        }
+
+        .bottom-mid{
+            background-color: #a8bec9;
+            p{
+                font-size: 2rem;
+            }
+        }
+
+        .bottom-right{
+            background-color: #f2b237;
+            p{
+                font-size: 2rem;
+                margin: 15px;
+            }
+        }
+    }
+
+
+
+
+    
+
+
+}
