@@ -1,0 +1,90 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- 
+    usefull links
+    https://github.com
+    https://fonts.google.com
+    https://www.dafont.com
+    https://transfonter.org
+    https://cdnjs.com/libraries/font-awesome
+    https://fontawesome.com/search?m=free&o=r
+    https://sweetalert2.github.io
+    https://getbootstrap.com
+    https://cssgradient.io
+    -->
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<title>task</title>
+		<style>
+			* {
+				font-family: "Poppins";
+				font-size: 1.2rem;
+				/* background-color: rgba(100, 148, 237, 0.527); */
+			}
+		</style>
+	</head>
+	<body>
+		<section class="my-chat">
+			<div class="container">
+				<div class="chat-app hstack w-100" style="height: 600px">
+					<div class="w-25 p-2 bg-black h-100">
+						<div class="chat-app-users bg-white h-100 p-2" style="border-radius: 20px">
+							<!-- users -->
+							<div class="d-flex chat-user">
+								<div
+									style="border-radius: 50%; height: 40px; aspect-ratio: 1/1; background-color: gray; color: white"
+									class="d-flex align-items-center justify-content-center"
+								>
+									<i class="fa-solid fa-user"></i>
+								</div>
+								<p class="mx-2">aydin</p>
+							</div>
+							<div class="d-flex chat-user">
+								<div
+									style="border-radius: 50%; height: 40px; aspect-ratio: 1/1; background-color: gray; color: white"
+									class="d-flex align-items-center justify-content-center"
+								>
+									<i class="fa-solid fa-user"></i>
+								</div>
+								<p class="mx-2">lachin</p>
+							</div>
+						</div>
+					</div>
+					<div class="w-75 p-1 bg-black h-100">
+						<div class="chat-app__text-box h-100">
+							<div class="chat-app__text-box__chat-box h-75 bg-white p-1 overflow-y-auto" style="border-radius: 20px"></div>
+							<div class="chat-app__text-box__input-box h-25 d-flex gap-2">
+								<input id="chatInput" class="w-75 m-2" type="text" pattern="text" style="border-radius: 20px" />
+								<button class="btn bg-primary w-25 m-2" style="color: white">Enter</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script src="./main.js"></script>
+	</body>
+</html>
