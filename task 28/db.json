@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "login": "Skill707",
+      "pass": "typicode"
+    },
+    {
+      "id": 2,
+      "login": "json-server",
+      "pass": "typicode"
+    },
+    {
+      "login": "Skill70",
+      "pass": "asdassada",
+      "id": 3
+    }
+  ]
+}
