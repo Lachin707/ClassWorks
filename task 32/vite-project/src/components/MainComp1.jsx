@@ -3,7 +3,7 @@ import { array } from "./data";
 function MainComp1() {
 	return (
 		<>
-			<table>
+			<table className="my-table">
 				<tr>
 					<th>id</th>
 					<th>title</th>

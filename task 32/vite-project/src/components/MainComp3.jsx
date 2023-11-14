@@ -7,7 +7,7 @@ console.log("🚀 ~ file: MainComp3.jsx:5 ~ element:", element);
 function MainComp3() {
 	return (
 		<>
-			<div>
+			<div className="card">
 				<p>{element.id}</p>
 				<p>{element.title}</p>
 				<p>{element.price}</p>

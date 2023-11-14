@@ -1,12 +1,11 @@
 import { array } from "./data";
 let array2 = array.sort((a, b) => b.price - a.price);
-console.log(array2);
 
 
 function MainComp2() {
 	return (
 		<>
-			<table>
+			<table className="my-table">
 				<tr>
 					<th>id</th>
 					<th>title</th>
