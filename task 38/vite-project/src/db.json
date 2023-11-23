@@ -1,0 +1,47 @@
+{
+    "users": [
+      {
+        "email": "lachin@mail.ru",
+        "pass": "123",
+        "friends": [ "lachin@mail.ru"],
+        "requests": [ "lachin@mail.ru"]
+      },
+      {
+        "email": "aydin@mail.ru",
+        "pass": "123",
+        "friends": [ "lachin@mail.ru"],
+        "requests": [ "lachin@mail.ru"]
+      },
+      {
+        "email": "anar@mail.ru",
+        "pass": "123",
+        "friends": [ "lachin@mail.ru"],
+        "requests": [ "lachin@mail.ru"]
+      },
+      {
+        "email": "efqan@mail.ru",
+        "pass": "123",
+        "friends": [ "lachin@mail.ru"],
+        "requests": [ "lachin@mail.ru"]
+      },
+      {
+        "email": "zamir@mail.ru",
+        "pass": "123",
+        "friends": [ "lachin@mail.ru"],
+        "requests": [ "lachin@mail.ru"]
+      },
+      {
+        "email": "yunis@mail.ru",
+        "pass": "123",
+        "friends": [ "lachin@mail.ru"],
+        "requests": [ "lachin@mail.ru"]
+      },
+      {
+        "email": "elgun@mail.ru",
+        "pass": "123",
+        "friends": [ "lachin@mail.ru"],
+        "requests": [ "lachin@mail.ru"]
+      }
+
+    ]
+}
