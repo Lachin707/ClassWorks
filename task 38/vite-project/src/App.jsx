@@ -1,6 +1,6 @@
 import { useReducer, useState } from "react";
 
-let users = [
+let array = [
 	{
 		email: "lachin@mail.ru",
 		pass: "123",
@@ -45,41 +45,34 @@ let users = [
 	},
 ];
 
-
 function App() {
-	const ACTION_TYPES = {
-		LOGIN: "login",
-		LOGOUT: "logout",
-	};
+	// const ACTION_TYPES = {
+	// 	LOGIN: "login",
+	// 	LOGOUT: "logout",
+	// };
 
-	const INITIAL_STATE = {
-		logged: "",
-		loading: false,
-		error: false,
-	};
+	// const INITIAL_STATE = {
+	// 	logged: "",
+	// 	loading: false,
+	// 	error: false,
+	// };
 
-	function reducer(state, action) {
-		const { type } = action;
+	// function reducer(state, action) {
+	// 	const { type } = action;
 
-		switch (type) {
-			case "login":
-				return {
-					...state,
-					[action.payload.name]: action.payload.value,
-				};
-			default:
-				return state;
-		}
-	}
-
-	const [state, dispatch] = useReducer(reducer, INITIAL_STATE);
+	// 	switch (type) {
+	// 		case "login":
+	// 			return {...state, };
+	// 		default:
+	// 			return state;
+	// 	}
+	// }
+	// const [state, dispatch] = useReducer(reducer, INITIAL_STATE);
 
 	const [logged, setLogged] = useState("");
-	const [loggedUserData, setLoggedUserData] = useState();
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
-
-	const [filteredUsers, setFilteredUsers] = useState();
+	const [users, setUsers] = useState(array);
 
 	function handleSubmit(e) {
 		e.preventDefault();
@@ -87,14 +80,6 @@ function App() {
 			users.map((user) => {
 				if (user.email == email && user.pass == password) {
 					setLogged(email);
-					setLoggedUserData(user);
-
-          let FUA = users.filter((item) => item.email != email);
-
-          user.friends.map((friend) => {  FUA = FUA.filter((item) => item.email != friend) })
-
-          setFilteredUsers(FUA);
-
 				}
 			});
 		} else {
@@ -102,9 +87,32 @@ function App() {
 		}
 	}
 
-	function handleAddToFriends(e) {}
+	function getLoggedUser(logged) {
+		let user = users[0];
+		for (let index = 0; index < users.length; index++) {
+			if (users[index].email == logged) {
+				user = users[index];
+				break;
+			}
+		}
+		return user;
+	}
 
-	function handleAcceptFriendship(e) {}
+	function handleAddToFriends(e) {
+		let arr2 = users.filter((user) => user.email != e.target.id);
+		let u = users.filter((user) => user.email == e.target.id);
+		u[0].requests = [...u[0].requests, logged];
+		setUsers([...arr2, u[0]]);
+	}
+
+	function handleAcceptFriendship(e) {
+		let arr2 = users.filter((user) => user.email != e.target.id);
+		let u = users.filter((user) => user.email == e.target.id);
+		u[0].friends = [...u[0].friends, e.target.id];
+		// u[0].requests = [...u[0].requests, logged];
+		setUsers([...arr2, u[0]]);
+		console.log(u[0]);
+	}
 
 	return (
 		<>
@@ -119,18 +127,20 @@ function App() {
 					<h1 style={{ color: "white" }}>{logged}</h1>
 					<p style={{ color: "white" }}>my friendship requests:</p>
 					<ul>
-						{loggedUserData.requests.map((item, index) => {
+						{getLoggedUser(logged).requests.map((item, index) => {
 							return (
 								<li key={index} style={{ color: "white", margin: "10px 0" }}>
 									{item}
-									<button onClick={handleAcceptFriendship}>Accept friendship</button>
+									<button id={item} onClick={handleAcceptFriendship}>
+										Accept friendship
+									</button>
 								</li>
 							);
 						})}
 					</ul>
 					<p style={{ color: "white" }}>my friends:</p>
 					<ul>
-						{loggedUserData.friends.map((item, index) => {
+						{getLoggedUser(logged).friends.map((item, index) => {
 							return (
 								<li key={index} style={{ color: "white", margin: "10px 0" }}>
 									{item}
@@ -140,11 +150,13 @@ function App() {
 					</ul>
 					<p style={{ color: "white" }}>users:</p>
 					<ul>
-						{filteredUsers.map((user, index) => {
+						{users.filter((user)=>user.email).map((user, index) => {
 							return (
 								<li key={index} style={{ color: "white", margin: "10px 0" }}>
 									{user.email}
-									<button onClick={handleAddToFriends}>Add to friends</button>
+									<button id={user.email} onClick={handleAddToFriends}>
+										Add to friends
+									</button>
 								</li>
 							);
 						})}
