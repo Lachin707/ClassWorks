@@ -1,0 +1,73 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "username": "a",
+      "posts": []
+    },
+    {
+      "id": 1,
+      "username": "zamir",
+      "posts": [
+        {
+          "id": "asda",
+          "text": "lorem ipsum",
+          "accepted": false
+        },
+        {
+          "id": "dfgd",
+          "text": "lorem ipsumdasdas",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "username": "user",
+      "posts": [
+        {
+          "id": "4564",
+          "text": "lorem ipsum",
+          "accepted": false
+        },
+        {
+          "id": "fdgd",
+          "text": "lorem ipsumdasdas",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "username": "lachin",
+      "posts": [
+        {
+          "id": "hfgh",
+          "text": "lorem ipsum",
+          "accepted": false
+        },
+        {
+          "id": "jghh",
+          "text": "lorem ipsumdasdas",
+          "accepted": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "username": "123",
+      "posts": [
+        {
+          "id": "khjk",
+          "text": "lorem ipsum",
+          "accepted": false
+        },
+        {
+          "id": "7075",
+          "text": "lorem ipsumdasdas",
+          "accepted": true
+        }
+      ]
+    }
+  ]
+}
