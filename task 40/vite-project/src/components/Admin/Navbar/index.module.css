@@ -1,0 +1,11 @@
+.link{
+    margin: 0 8px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.brand{
+    cursor: pointer;
+    text-decoration: none;
+}
