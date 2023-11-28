@@ -44,12 +44,12 @@
         {
           "id": "hfgh",
           "text": "lorem ipsum",
-          "accepted": false
+          "accepted": true
         },
         {
           "id": "jghh",
           "text": "lorem ipsumdasdas",
-          "accepted": false
+          "accepted": true
         }
       ]
     },
@@ -60,7 +60,7 @@
         {
           "id": "khjk",
           "text": "lorem ipsum",
-          "accepted": false
+          "accepted": true
         },
         {
           "id": "7075",

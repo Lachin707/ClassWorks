@@ -1,9 +1,9 @@
 import React from "react";
-import { Space, Table } from "antd";
+import { Space, Table, Input } from "antd";
 import axios from "axios";
 import { useState } from "react";
 import { useEffect } from "react";
-import Input from "antd/es/input/Input";
+import "./index.css"
 
 async function handleClick(userID, id) {
 	let array = [];
@@ -35,7 +35,10 @@ const columns = [
 	{
 		title: "Action",
 		key: "action",
-		render: (record) => <Space size="middle">{record.accepted ? null : <button onClick={() => handleClick(record.userID, record.id)}>Accept</button>}</Space>,
+		render: (record) => <Space size="middle">{record.accepted ? null : <button  onClick={(e) => {
+			console.log(e.target)
+			e.target.setAttribute("class","none")
+			handleClick(record.userID, record.id)}}>Accept</button>}</Space>,
 	},
 ];
 
@@ -43,6 +46,7 @@ function TableComp() {
 	const [loggedUser, setLoggedUser] = useState("");
 	const [gettedData, setGettedData] = useState([]);
 	const [usersPosts, setUsersPosts] = useState([]);
+	const [btn, setBtn] = useState(false)
 
 	let array = [];
 	useEffect(() => {
@@ -62,7 +66,6 @@ function TableComp() {
 				array.push(...user?.posts);
 			});
 			setUsersPosts(array);
-			console.log(array);
 		}
 	}
 
