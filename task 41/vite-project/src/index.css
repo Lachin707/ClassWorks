@@ -1,0 +1,27 @@
+body {
+	height: 100dvh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	
+}
+.card {
+	width: 400px;
+	height: 550px;
+  padding: 10px;
+  border: 1px solid black;
+
+}
+
+.item{
+  margin: 10px 0 !important;
+  width: 100%;
+}
+
+.sel{
+	width: 100%;
+}
+.form{
+	width: 100%;
+}

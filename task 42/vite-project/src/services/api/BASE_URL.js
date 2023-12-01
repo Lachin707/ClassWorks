@@ -1,0 +1,1 @@
+export default BASE_URL = 'northwind.vercel.app';
